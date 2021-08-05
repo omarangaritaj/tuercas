@@ -12,10 +12,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
         .bd-placeholder-img {
@@ -26,7 +24,7 @@
             -ms-user-select: none;
             user-select: none;
         }
-
+        
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -41,8 +39,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Remaches Roscados</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -77,11 +74,9 @@
     <main role="main" class="container">
 
         <div class="starter-template">
-            <h1>Página en Mantenimiento</h1>
-            <p class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te
-                atenderemos lo más pronto posible</p>
-            <h1 class="text-success"><i class="fa fa-whatsapp" aria-hidden="true"></i>
-                3002224957</h1>
+            <p class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te atenderemos lo más pronto posible</p>
+            <h1 class="text-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> 3002224957
+            </h1>
         </div>
         <div class="text-center">
             <img class="img-fluid" src="./tuercas.png" alt="Tuercas Remachables | Remaches Roscados" width="300">
@@ -94,10 +89,6 @@
                         <th scope="col" class="text-center">unitario</th>
                         <th scope="col" class="text-center">Cantidad</th>
                         <th scope="col" class="text-center">Subtotal</th>
-                        <th scope="col" class="text-center">Medida</th>
-                        <th scope="col" class="text-center">unitario</th>
-                        <th scope="col" class="text-center">Cantidad</th>
-                        <th scope="col" class="text-center">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -106,19 +97,20 @@
                         <td>${{Math.ceil(m3==0? 0:subM3/m3)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="m3">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m3">
                             </div>
                         </td>
                         <td>
                             $ {{subM3}}
                         </td>
+                    </tr>
+                    <tr>
+
                         <th scope="row">4 milímetros</th>
                         <td>${{Math.ceil(m4==0? 0:subM4/m4)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="m4">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m4">
                             </div>
                         </td>
                         <td>
@@ -130,19 +122,19 @@
                         <td>${{Math.ceil(m5==0? 0:subM5/m5)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="m5">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m5">
                             </div>
                         </td>
                         <td>
                             $ {{subM5}}
                         </td>
+                    </tr>
+                    <tr>
                         <th scope="row">6 milímetros</th>
                         <td>${{Math.ceil(m6==0? 0:subM6/m6)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="m6">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m6">
                             </div>
                         </td>
                         <td>
@@ -154,44 +146,43 @@
                         <td>${{Math.ceil(m8==0? 0:subM8/m8)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="m8">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m8">
                             </div>
                         </td>
                         <td>
                             $ {{subM8}}
                         </td>
+                    </tr>
+                    <tr>
                         <th scope="row">10 milímetros</th>
                         <td>${{Math.ceil(m10==0? 0:subM10/m10)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="m10">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m10">
                             </div>
                         </td>
                         <td>
                             $ {{subM10}}
                         </td>
                     </tr>
-
                     <tr>
                         <th scope="row">3/16" UNC <br> </th>
                         <td>${{Math.ceil(unc316==0? 0:sub316/unc316)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="unc316">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc316">
                             </div>
                         </td>
                         <td>
                             $ {{sub316}}
                         </td>
+                    </tr>
+                    <tr>
                         <th scope="row">1/4" UNC</th>
                         <td>${{Math.ceil(unc14==0? 0:sub14/unc14)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="unc14">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc14">
                             </div>
                         </td>
                         <td>
@@ -203,19 +194,19 @@
                         <td>${{Math.ceil(unc516==0? 0:sub516/unc516)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="unc516">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc516">
                             </div>
                         </td>
                         <td>
                             $ {{sub516}}
                         </td>
+                    </tr>
+                    <tr>
                         <th scope="row">3/8" UNC</th>
                         <td>${{Math.ceil(unc38==0? 0:sub38/unc38)}}/uni</td>
                         <td>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0"
-                                    v-model.number="unc38">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc38">
                             </div>
                         </td>
                         <td>
@@ -225,166 +216,49 @@
                 </tbody>
             </table>
             <table class="table">
-                <tr>
-                    <th scope="row" class="text-right">
-                        <h3> TOTAL: </h3>
-                    </th>
-                    <th scope="row" class="text-left">
-                        <h2>$ {{ total }} </h2>
-                    </th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">Total</th>
+                        <th scope="col" class="text-center">IVA</th>
+                        <th scope="col" class="text-center">Total + IVA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row" class="text-center">
+                            <h2>$ {{ total }} </h2>
+                        </td>
+                        <td scope="row" class="text-center">
+                            <h4>$ {{ Math.ceil(total*.19) }} </h4>
+                        </td>
+                        <td scope="row" class="text-center">
+                            <h4>$ {{ Math.ceil(total*1.19) }} </h4>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <h4 v-show="mas100" class="text-info">Recomendamos adquirir más de <strong>100</strong> unidades</h4>
         </div>
         <div class="starter-template">
-            <h1>Página en Mantenimiento</h1>
-            <p class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te
-                atenderemos lo más pronto posible</p>
-            <h1 class="text-success"><i class="fa fa-whatsapp" aria-hidden="true"></i>
-                3002224957</h1>
+            <p class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te atenderemos lo más pronto posible</p>
+            <h1 class="text-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> 3002224957
+            </h1>
         </div>
 
-        <script>
-            let tM3 = [234, 188, 172, 156, 'tM3'];
-            let tM4 = [331, 265, 243, 240, 'tM4'];
-            let tM5 = [314, 252, 230, 210, 'tM5'];
-            let tM6 = [380, 304, 278, 254, 'tM6'];
-            let tM8 = [580, 464, 426, 388, 'tM8'];
-            let tM10 = [842, 674, 618, 562, 'tM10'];
-            let t316 = [340, 272, 250, 228, 't316'];
-            let t14 = [462, 370, 340, 310, 't14'];
-            let t516 = [900, 720, 662, 602, 't516'];
-            let t38 = [986, 788, 724, 658, 't38'];
-
-
-
-            new Vue({
-                el: '#app',
-                data: {
-                    m3: '',
-                    m4: '',
-                    m5: '',
-                    m6: '',
-                    m8: '',
-                    m10: '',
-                    unc316: '',
-                    unc14: '',
-                    unc516: '',
-                    unc38: '',
-                    mas100: false
-                },
-                methods: {
-                    rango(cantidadTuerca, tablaValor) {
-                        if (cantidadTuerca <= 0) {
-                            return 0;
-                        };
-                        if (cantidadTuerca > 0 && cantidadTuerca < 100) {
-                            switch (tablaValor[4]) {
-                                case 'tM8':
-                                    return cantidadTuerca * tablaValor[0];
-                                    break;
-                                case 'tM10':
-                                    return cantidadTuerca * tablaValor[0];
-                                    break;
-                                case 't516':
-                                    return cantidadTuerca * tablaValor[0];
-                                    break;
-                                case 't38':
-                                    return cantidadTuerca * tablaValor[0];
-                                    break;
-
-                                default:
-                                    this.mas100 = true;
-                                    return Math.round(cantidadTuerca * tablaValor[0] * 1.75);
-                                    break;
-                            }
-
-                        };
-                        if (cantidadTuerca >= 100 && cantidadTuerca < 500) {
-                            this.mas100 = false;
-                            return cantidadTuerca * tablaValor[0];
-                        };
-                        if (cantidadTuerca >= 500 && cantidadTuerca < 1000) {
-                            this.mas100 = false;
-                            return cantidadTuerca * tablaValor[1];
-                        };
-                        if (cantidadTuerca >= 1000 && cantidadTuerca < 2000) {
-                            this.mas100 = false;
-                            return cantidadTuerca * tablaValor[2];
-                        };
-                        if (cantidadTuerca >= 2000) {
-                            this.mas100 = false;
-                            return cantidadTuerca * tablaValor[3];
-                        };
-                    }
-                },
-                computed: {
-                    total: function (e) {
-                        var total = 0;
-                        return this.rango(Math.ceil(this.m3), tM3) +
-                            this.rango(Math.ceil(this.m4), tM4) +
-                            this.rango(Math.ceil(this.m5), tM5) +
-                            this.rango(Math.ceil(this.m6), tM6) +
-                            this.rango(Math.ceil(this.m8), tM8) +
-                            this.rango(Math.ceil(this.m10), tM10) +
-                            this.rango(Math.ceil(this.unc316), t316) +
-                            this.rango(Math.ceil(this.unc14), t14) +
-                            this.rango(Math.ceil(this.unc516), t516) +
-                            this.rango(Math.ceil(this.unc38), t38)
-                    },
-                    subM3: function (e) {
-                        return this.rango(Math.ceil(this.m3), tM3)
-                    },
-                    subM4: function (e) {
-                        return this.rango(Math.ceil(this.m4), tM4)
-                    },
-                    subM5: function (e) {
-                        return this.rango(Math.ceil(this.m5), tM5)
-                    },
-                    subM6: function (e) {
-                        return this.rango(Math.ceil(this.m6), tM6)
-                    },
-                    subM8: function (e) {
-                        return this.rango(Math.ceil(this.m8), tM8)
-                    },
-                    subM10: function (e) {
-                        return this.rango(Math.ceil(this.m10), tM10)
-                    },
-                    sub316: function (e) {
-                        return this.rango(Math.ceil(this.unc316), t316)
-                    },
-                    sub14: function (e) {
-                        return this.rango(Math.ceil(this.unc14), t14)
-                    },
-                    sub516: function (e) {
-                        return this.rango(Math.ceil(this.unc516), t516)
-                    },
-                    sub38: function (e) {
-                        return this.rango(Math.ceil(this.unc38), t38)
-                    }
-
-                }
-
-            });
-        </script>
-
-    </main><!-- /.container -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </main>
+    <!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script>
         window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
