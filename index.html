@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Remaches Roscados</title>
 
@@ -82,17 +81,17 @@
             <img class="img-fluid" src="./tuercas.png" alt="Tuercas Remachables | Remaches Roscados" width="300">
         </div>
         <div class="container" id="app">
-            <table class="table table-bordered">
+            <table class="table table-borderless table-sm align-middle">
                 <thead>
                     <tr>
-                        <th scope="col" class="text-center">Medida</th>
-                        <th scope="col" class="text-center">unitario</th>
-                        <th scope="col" class="text-center">Cantidad</th>
-                        <th scope="col" class="text-center">Subtotal</th>
+                        <th scope="col" class="text-center ">Medida</th>
+                        <th scope="col" class="text-center ">$ unitario</th>
+                        <th scope="col" class="text-center ">Cantidad</th>
+                        <th scope="col" class="text-center ">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="align-middle">
                         <th scope="row">3 milímetros</th>
                         <td>${{Math.ceil(m3==0? 0:subM3/m3)}}/uni</td>
                         <td>
@@ -109,7 +108,7 @@
                         <th scope="row">4 milímetros</th>
                         <td>${{Math.ceil(m4==0? 0:subM4/m4)}}/uni</td>
                         <td>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-1">
                                 <input type="number" class="form-control text-right" placeholder="0" v-model.number="m4">
                             </div>
                         </td>
@@ -166,6 +165,18 @@
                         </td>
                     </tr>
                     <tr>
+                        <th scope="row">12 milímetros</th>
+                        <td>${{Math.ceil(m12==0? 0:subM12/m12)}}/uni</td>
+                        <td>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m12">
+                            </div>
+                        </td>
+                        <td>
+                            $ {{subM12}}
+                        </td>
+                    </tr>
+                    <tr>
                         <th scope="row">3/16" UNC <br> </th>
                         <td>${{Math.ceil(unc316==0? 0:sub316/unc316)}}/uni</td>
                         <td>
@@ -215,25 +226,55 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="table">
+            <p>
+
+            </p>
+            <table class="table table-borderless">
                 <thead>
                     <tr>
-                        <th scope="col" class="text-center">Total</th>
-                        <th scope="col" class="text-center">IVA</th>
-                        <th scope="col" class="text-center">Total + IVA</th>
+                        <th scope="col" class="text-center">
+                            <h3 v-if="total>0">Resumen</h3>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row" class="text-center">
-                            <h2>$ {{ total }} </h2>
+                        <td v-if="total>0" scope="row" class="text-center">
+                            <h4>Subtotal: ${{ total }} + ${{ Math.ceil(total*.19) }} (IVA) = Total: ${{ Math.ceil(total*1.19) }}</h4>
                         </td>
-                        <td scope="row" class="text-center">
-                            <h4>$ {{ Math.ceil(total*.19) }} </h4>
-                        </td>
-                        <td scope="row" class="text-center">
-                            <h4>$ {{ Math.ceil(total*1.19) }} </h4>
-                        </td>
+                    </tr>
+                    <tr>
+                        <td v-if="m3>0" scope="row" class="text-center">Tamaño 3mm: {{m3}} unidades x ${{Math.ceil(m3==0? 0:subM3/m3)}}/unidad = ${{subM3}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="m4>0" scope="row" class="text-center">Tamaño 4mm: {{m4}} unidades x ${{Math.ceil(m4==0? 0:subM4/m4)}}/unidad = ${{subM4}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="m5>0" scope="row" class="text-center">Tamaño 5mm: {{m5}} unidades x ${{Math.ceil(m5==0? 0:subM5/m5)}}/unidad = ${{subM5}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="m6>0" scope="row" class="text-center">Tamaño 6mm: {{m6}} unidades x ${{Math.ceil(m6==0? 0:subM6/m6)}}/unidad = ${{subM6}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="m8>0" scope="row" class="text-center">Tamaño 8mm: {{m8}} unidades x ${{Math.ceil(m8==0? 0:subM8/m8)}}/unidad = ${{subM8}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="m10>0" scope="row" class="text-center">Tamaño 10mm: {{m10}} unidades x ${{Math.ceil(m10==0? 0:subM10/m10)}}/unidad = ${{subM10}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="m12>0" scope="row" class="text-center">Tamaño 12mm: {{m12}} unidades x ${{Math.ceil(m12==0? 0:subM12/m12)}}/unidad = ${{subM12}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="unc316>0" scope="row" class="text-center">Tamaño 3/16": {{unc316}} unidades x ${{Math.ceil(unc316==0? 0:sub316/unc316)}}/unidad = ${{sub316}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="unc14>0" scope="row" class="text-center">Tamaño 1/4": {{unc14}} unidades x ${{Math.ceil(unc14==0? 0:sub14/unc14)}}/unidad = ${{sub14}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="unc516>0" scope="row" class="text-center">Tamaño 5/16": {{unc516}} unidades x ${{Math.ceil(unc516==0? 0:sub516/unc516)}}/unidad = ${{sub516}}</td>
+                    </tr>
+                    <tr>
+                        <td v-if="unc38>0" scope="row" class="text-center">Tamaño 3/8": {{unc38}} unidades x ${{Math.ceil(unc38==0? 0:sub38/unc38)}}/unidad = ${{sub38}}</td>
                     </tr>
                 </tbody>
             </table>

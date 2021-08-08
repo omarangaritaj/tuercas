@@ -5,6 +5,7 @@ let data = {
     tM6: [600.76, -0.168],
     tM8: [1787.3, -0.23],
     tM10: [1508.9, -0.155],
+    tM12: [0, 0],
     t316: [690.03, -0.211],
     t14: [985.16, -0.188],
     t516: [977.42, -0.116],
@@ -22,6 +23,7 @@ new Vue({
         m6: '',
         m8: '',
         m10: '',
+        m12: '',
         unc316: '',
         unc14: '',
         unc516: '',
@@ -52,6 +54,7 @@ new Vue({
                 this.rango(Math.ceil(this.m6), data.tM6) +
                 this.rango(Math.ceil(this.m8), data.tM8) +
                 this.rango(Math.ceil(this.m10), data.tM10) +
+                this.rango(Math.ceil(this.m12), data.tM12) +
                 this.rango(Math.ceil(this.unc316), data.t316) +
                 this.rango(Math.ceil(this.unc14), data.t14) +
                 this.rango(Math.ceil(this.unc516), data.t516) +
@@ -74,6 +77,9 @@ new Vue({
         },
         subM10: function(e) {
             return this.rango(Math.ceil(this.m10), data.tM10)
+        },
+        subM12: function(e) {
+            return this.rango(Math.ceil(this.m10), data.tM12)
         },
         sub316: function(e) {
             return this.rango(Math.ceil(this.unc316), data.t316)
