@@ -2,304 +2,428 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <title>Remaches Roscados</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Remaches Roscados</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="starter-template.css" rel="stylesheet">
+  <script defer src="./vue.global.prod.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Remaches Roscados</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li> -->
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
-        </div>
-    </nav>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#zincado">Zincado
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#inox">Inoxidable
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#total">Ver precios
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <main role="main" class="container">
+<main role="main" class="container">
 
-        <div class="starter-template">
-            <p class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te atenderemos lo más pronto posible</p>
-            <h1 class="text-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> 3002224957
-            </h1>
-        </div>
-        <div class="text-center">
-            <img class="img-fluid" src="./tuercas.png" alt="Tuercas Remachables | Remaches Roscados" width="300">
-        </div>
-        <div class="container" id="app">
-            <table class="table table-borderless table-sm align-middle">
-                <thead>
-                    <tr>
-                        <th scope="col" class="text-center ">Medida</th>
-                        <th scope="col" class="text-center ">$ unitario</th>
-                        <th scope="col" class="text-center ">Cantidad</th>
-                        <th scope="col" class="text-center ">Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="align-middle">
-                        <th scope="row">3 milímetros</th>
-                        <td>${{Math.ceil(m3==0? 0:subM3/m3)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m3">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM3}}
-                        </td>
-                    </tr>
-                    <tr>
+  <div class="starter-template">
+    <!--     <p class="lead">En unos días sabrás de to do nuestro portafolio de productos por lo pronto contáctanos y te atenderemos lo más pronto posible</p> -->
+    <h1 class="text-success" id="zincado">
+      Tuercas Remachables </br> <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      3002224957
+    </h1>
+  </div>
+  <div class="text-center">
+    <img class="img-fluid" src="./tuercas.png" alt="Tuercas Remachables | Remaches Roscados" width="300">
+  </div>
+  <div class="container" id="app">
+    <h2 class="text-primary">
+      <i class="fa fa-asterisk" aria-hidden="true"></i>
+      Material ACERO ZINCADO
+    </h2>
+    <table class="table table-borderless table-sm align-middle" aria-label="Precios tuercas remachables">
+      <thead>
+      <tr>
+        <th scope="col" class="text-center ">Medida</th>
+        <th scope="col" class="text-center ">$ unitario</th>
+        <th scope="col" class="text-center ">Cantidad</th>
+        <th scope="col" class="text-center ">Subtotal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="align-middle">
+        <th >3 milímetros</th>
+        <td>${{Math.ceil(m3 == 0 ? 0 : subM3 / m3)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m3">
+          </div>
+        </td>
+        <td>
+          $ {{subM3}}
+        </td>
+      </tr>
+      <tr>
 
-                        <th scope="row">4 milímetros</th>
-                        <td>${{Math.ceil(m4==0? 0:subM4/m4)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-1">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m4">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM4}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5 milímetros</th>
-                        <td>${{Math.ceil(m5==0? 0:subM5/m5)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m5">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM5}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6 milímetros</th>
-                        <td>${{Math.ceil(m6==0? 0:subM6/m6)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m6">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM6}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8 milímetros</th>
-                        <td>${{Math.ceil(m8==0? 0:subM8/m8)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m8">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM8}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10 milímetros</th>
-                        <td>${{Math.ceil(m10==0? 0:subM10/m10)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m10">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM10}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">12 milímetros</th>
-                        <td>${{Math.ceil(m12==0? 0:subM12/m12)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="m12">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{subM12}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3/16" UNC <br> </th>
-                        <td>${{Math.ceil(unc316==0? 0:sub316/unc316)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc316">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{sub316}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1/4" UNC</th>
-                        <td>${{Math.ceil(unc14==0? 0:sub14/unc14)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc14">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{sub14}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5/16" UNC</th>
-                        <td>${{Math.ceil(unc516==0? 0:sub516/unc516)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc516">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{sub516}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3/8" UNC</th>
-                        <td>${{Math.ceil(unc38==0? 0:sub38/unc38)}}/uni</td>
-                        <td>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc38">
-                            </div>
-                        </td>
-                        <td>
-                            $ {{sub38}}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>
+        <th >4 milímetros</th>
+        <td>${{Math.ceil(m4 == 0 ? 0 : subM4 / m4)}}/uni</td>
+        <td>
+          <div class="input-group mb-1">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m4">
+          </div>
+        </td>
+        <td>
+          $ {{subM4}}
+        </td>
+      </tr>
+      <tr>
+        <th >5 milímetros</th>
+        <td>${{Math.ceil(m5 == 0 ? 0 : subM5 / m5)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m5">
+          </div>
+        </td>
+        <td>
+          $ {{subM5}}
+        </td>
+      </tr>
+      <tr>
+        <th >6 milímetros</th>
+        <td>${{Math.ceil(m6 == 0 ? 0 : subM6 / m6)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m6">
+          </div>
+        </td>
+        <td>
+          $ {{subM6}}
+        </td>
+      </tr>
+      <tr>
+        <th >8 milímetros</th>
+        <td>${{Math.ceil(m8 == 0 ? 0 : subM8 / m8)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m8">
+          </div>
+        </td>
+        <td>
+          $ {{subM8}}
+        </td>
+      </tr>
+      <tr>
+        <th >10 milímetros</th>
+        <td>${{Math.ceil(m10 == 0 ? 0 : subM10 / m10)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m10">
+          </div>
+        </td>
+        <td>
+          $ {{subM10}}
+        </td>
+      </tr>
+      <tr>
+        <th >12 milímetros</th>
+        <td>${{Math.ceil(m12 == 0 ? 0 : subM12 / m12)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="m12">
+          </div>
+        </td>
+        <td>
+          $ {{subM12}}
+        </td>
+      </tr>
+      <tr>
+        <th >3/16" UNC <br></th>
+        <td>${{Math.ceil(unc316 == 0 ? 0 : sub316 / unc316)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc316">
+          </div>
+        </td>
+        <td>
+          $ {{sub316}}
+        </td>
+      </tr>
+      <tr>
+        <th >1/4" UNC</th>
+        <td>${{Math.ceil(unc14 == 0 ? 0 : sub14 / unc14)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc14">
+          </div>
+        </td>
+        <td>
+          $ {{sub14}}
+        </td>
+      </tr>
+      <tr>
+        <th >5/16" UNC</th>
+        <td>${{Math.ceil(unc516 == 0 ? 0 : sub516 / unc516)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc516">
+          </div>
+        </td>
+        <td>
+          $ {{sub516}}
+        </td>
+      </tr>
+      <tr>
+        <th >3/8" UNC</th>
+        <td>${{Math.ceil(unc38 == 0 ? 0 : sub38 / unc38)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="unc38">
+          </div>
+        </td>
+        <td>
+          $ {{sub38}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <!-- table mm -->
 
-            </p>
-            <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <th scope="col" class="text-center">
-                            <h3 v-if="total>0">Resumen</h3>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td v-if="total>0" scope="row" class="text-center">
-                            <h4>Subtotal: ${{ total }} + ${{ Math.ceil(total*.19) }} (IVA) = Total: ${{ Math.ceil(total*1.19) }}</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td v-if="m3>0" scope="row" class="text-center">Tamaño 3mm: {{m3}} unidades x ${{Math.ceil(m3==0? 0:subM3/m3)}}/unidad = ${{subM3}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="m4>0" scope="row" class="text-center">Tamaño 4mm: {{m4}} unidades x ${{Math.ceil(m4==0? 0:subM4/m4)}}/unidad = ${{subM4}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="m5>0" scope="row" class="text-center">Tamaño 5mm: {{m5}} unidades x ${{Math.ceil(m5==0? 0:subM5/m5)}}/unidad = ${{subM5}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="m6>0" scope="row" class="text-center">Tamaño 6mm: {{m6}} unidades x ${{Math.ceil(m6==0? 0:subM6/m6)}}/unidad = ${{subM6}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="m8>0" scope="row" class="text-center">Tamaño 8mm: {{m8}} unidades x ${{Math.ceil(m8==0? 0:subM8/m8)}}/unidad = ${{subM8}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="m10>0" scope="row" class="text-center">Tamaño 10mm: {{m10}} unidades x ${{Math.ceil(m10==0? 0:subM10/m10)}}/unidad = ${{subM10}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="m12>0" scope="row" class="text-center">Tamaño 12mm: {{m12}} unidades x ${{Math.ceil(m12==0? 0:subM12/m12)}}/unidad = ${{subM12}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="unc316>0" scope="row" class="text-center">Tamaño 3/16": {{unc316}} unidades x ${{Math.ceil(unc316==0? 0:sub316/unc316)}}/unidad = ${{sub316}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="unc14>0" scope="row" class="text-center">Tamaño 1/4": {{unc14}} unidades x ${{Math.ceil(unc14==0? 0:sub14/unc14)}}/unidad = ${{sub14}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="unc516>0" scope="row" class="text-center">Tamaño 5/16": {{unc516}} unidades x ${{Math.ceil(unc516==0? 0:sub516/unc516)}}/unidad = ${{sub516}}</td>
-                    </tr>
-                    <tr>
-                        <td v-if="unc38>0" scope="row" class="text-center">Tamaño 3/8": {{unc38}} unidades x ${{Math.ceil(unc38==0? 0:sub38/unc38)}}/unidad = ${{sub38}}</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4 v-show="mas100" class="text-info">Recomendamos adquirir más de <strong>100</strong> unidades</h4>
-        </div>
-        <div class="starter-template">
-            <p class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te atenderemos lo más pronto posible</p>
-            <h1 class="text-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> 3002224957
-            </h1>
-        </div>
+    <h2 class="text-danger" id="inox">
+      <i class="fa fa-asterisk" aria-hidden="true"></i>
+      Material ACERO INOXIDABLE 304
+    </h2>
+    <table class="table table-borderless table-sm align-middle" aria-label="Precios tuercas remachables en acero inoxidable">
+      <thead>
+      <tr>
+        <th scope="col" class="text-center ">Medida</th>
+        <th scope="col" class="text-center ">$ unitario</th>
+        <th scope="col" class="text-center ">Cantidad</th>
+        <th scope="col" class="text-center ">Subtotal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="align-middle">
+        <th >Inox. 3 milímetros</th>
+        <td>${{Math.ceil(ssm3 == 0 ? 0 : ssSubM3 / ssm3)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="ssm3">
+          </div>
+        </td>
+        <td>
+          $ {{ssSubM3}}
+        </td>
+      </tr>
+      <tr>
 
-    </main>
-    <!-- /.container -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script>
-        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-    <script src="index.js"></script>
+        <th >Inox. 4 milímetros</th>
+        <td>${{Math.ceil(ssm4 == 0 ? 0 : ssSubM4 / ssm4)}}/uni</td>
+        <td>
+          <div class="input-group mb-1">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="ssm4">
+          </div>
+        </td>
+        <td>
+          $ {{ssSubM4}}
+        </td>
+      </tr>
+      <tr>
+        <th >Inox. 5 milímetros</th>
+        <td>${{Math.ceil(ssm5 == 0 ? 0 : ssSubM5 / ssm5)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="ssm5">
+          </div>
+        </td>
+        <td>
+          $ {{ssSubM5}}
+        </td>
+      </tr>
+      <tr>
+        <th >Inox. 6 milímetros</th>
+        <td>${{Math.ceil(ssm6 == 0 ? 0 : ssSubM6 / ssm6)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="ssm6">
+          </div>
+        </td>
+        <td>
+          $ {{ssSubM6}}
+        </td>
+      </tr>
+      <tr>
+        <th >Inox. 8 milímetros</th>
+        <td>${{Math.ceil(ssm8 == 0 ? 0 : ssSubM8 / ssm8)}}/uni</td>
+        <td>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control text-right" placeholder="0" v-model.number="ssm8">
+          </div>
+        </td>
+        <td>
+          $ {{ssSubM8}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <!-- table inox -->
+
+
+    <p>
+
+    </p>
+    <table class="table table-borderless" id="total" aria-label="Precios tuercas remachables inoxidable">
+      <thead>
+      <tr>
+        <th scope="col" class="text-center">
+          <h3 v-if="total>0">Resumen</h3>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td v-if="total>0"  class="text-center">
+          <h4>Subtotal: ${{ total }} + ${{ Math.ceil(total * .19) }} (IVA) = Total: ${{ Math.ceil(total * 1.19) }}</h4>
+        </td>
+        <td v-if="total<=0"  class="text-center text-primary">
+          <h4>Modifique las cantidades de los campos (arriba) para ver los precios</h4>
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m3>0"  class="text-center">Tamaño 3mm: {{m3}} unidades x ${{Math.ceil(
+          m3 == 0 ? 0 : subM3 / m3)}}/unidad = ${{subM3}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m4>0"  class="text-center">Tamaño 4mm: {{m4}} unidades x ${{Math.ceil(
+          m4 == 0 ? 0 : subM4 / m4)}}/unidad = ${{subM4}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m5>0"  class="text-center">Tamaño 5mm: {{m5}} unidades x ${{Math.ceil(
+          m5 == 0 ? 0 : subM5 / m5)}}/unidad = ${{subM5}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m6>0"  class="text-center">Tamaño 6mm: {{m6}} unidades x ${{Math.ceil(
+          m6 == 0 ? 0 : subM6 / m6)}}/unidad = ${{subM6}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m8>0"  class="text-center">Tamaño 8mm: {{m8}} unidades x ${{Math.ceil(
+          m8 == 0 ? 0 : subM8 / m8)}}/unidad = ${{subM8}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m10>0"  class="text-center">Tamaño 10mm: {{m10}} unidades x ${{Math.ceil(
+          m10 == 0 ? 0 : subM10 / m10)}}/unidad = ${{subM10}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="m12>0"  class="text-center">Tamaño 12mm: {{m12}} unidades x ${{Math.ceil(
+          m12 == 0 ? 0 : subM12 / m12)}}/unidad = ${{subM12}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="unc316>0"  class="text-center">Tamaño 3/16": {{unc316}} unidades x ${{Math.ceil(
+          unc316 == 0 ? 0 : sub316 / unc316)}}/unidad = ${{sub316}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="unc14>0"  class="text-center">Tamaño 1/4": {{unc14}} unidades x ${{Math.ceil(
+          unc14 == 0 ? 0 : sub14 / unc14)}}/unidad = ${{sub14}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="unc516>0"  class="text-center">Tamaño 5/16": {{unc516}} unidades x ${{Math.ceil(
+          unc516 == 0 ? 0 : sub516 / unc516)}}/unidad = ${{sub516}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="unc38>0"  class="text-center">Tamaño 3/8": {{unc38}} unidades x ${{Math.ceil(
+          unc38 == 0 ? 0 : sub38 / unc38)}}/unidad = ${{sub38}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="ssm3>0"  class="text-center">Tamaño 3mm inox 304: {{ssm3}} unidades x ${{Math.ceil(
+          ssm3 == 0 ? 0 : ssSubM3 / ssm3)}}/unidad = ${{ssSubM3}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="ssm4>0"  class="text-center">Tamaño 4mm inox 304: {{ssm4}} unidades x ${{Math.ceil(
+          ssm4 == 0 ? 0 : ssSubM4 / ssm4)}}/unidad = ${{ssSubM4}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="ssm5>0"  class="text-center">Tamaño 5mm inox 304: {{ssm5}} unidades x ${{Math.ceil(
+          ssm5 == 0 ? 0 : ssSubM5 / ssm5)}}/unidad = ${{ssSubM5}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="ssm6>0"  class="text-center">Tamaño 6mm inox 304: {{ssm6}} unidades x ${{Math.ceil(
+          ssm6 == 0 ? 0 : ssSubM6 / ssm6)}}/unidad = ${{ssSubM6}}
+        </td>
+      </tr>
+      <tr>
+        <td v-if="ssm8>0"  class="text-center">Tamaño 8mm inox 304: {{ssm8}} unidades x ${{Math.ceil(
+          ssm8 == 0 ? 0 : ssSubM8 / ssm8)}}/unidad = ${{ssSubM8}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <h4 v-show="mas100" class="text-info">Recomendamos adquirir más de <strong>100</strong> unidades</h4>
+  </div>
+  <div class="starter-template">
+    <p
+      class="lead">En unos días sabrás de todo nuestro portafolio de productos por lo pronto contáctanos y te atenderemos lo más pronto posible</p>
+    <h1 class="text-success">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      3002224957
+    </h1>
+  </div>
+
+</main>
+<!-- /.container -->
+<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script>
+  window.jQuery || document.write('<script defer src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+</script>
+<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+<script defer src="index.js"></script>
 </body>
 
 </html>
